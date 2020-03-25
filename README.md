@@ -14,7 +14,7 @@ To uninstall delete the [extension files](extension.ini).
 
 ## How to create an accordion
 
-This extension will automatically present in an accordion style so-called definitions list. See the [documentation of PHP Markdown Extra](https://michelf.ca/projects/php-markdown/extra/#def-list) for further details about writing definition lists in Markdown: the "term" will be treated as the visible part, the "definition" as the expandable part. (Note however that this extension does not support more terms for the same definition nor more definitions for the same term.)
+This extension will automatically present in an accordion style so-called definition lists: the "term" will be treated as the visible part, the "definition" as the expandable part. See the [documentation of PHP Markdown Extra](https://michelf.ca/projects/php-markdown/extra/#def-list) for further details about writing definition lists in Markdown. (Note however that this extension does not support more terms for the same definition nor more definitions for the same term.)
 
 Accordions are commonly used for names and definitions, FAQs and answers, categories and topics.
 
