@@ -1,11 +1,10 @@
 <?php
-// Accordion extension
-// Copyright (c) 2020 Giovanni Salmeri, https://github.com/GiovanniSalmeri/yellow-accordion
+// Accordion extension, https://github.com/GiovanniSalmeri/yellow-accordion
+// Copyright (c) 2020-2021 Giovanni Salmeri
 // This file may be used and distributed under the terms of the public license.
 
 class YellowAccordion {
-    const VERSION = "0.8.10";
-    const TYPE = "feature";
+    const VERSION = "0.8.16";
     public $yellow;         //access to API
     
     // Handle initialisation

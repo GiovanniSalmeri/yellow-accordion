@@ -1,16 +1,8 @@
-Accordion 0.8.10
-=============
+# Accordion 0.8.16
+
 Accordion-style lists.
 
 <p align="center"><img src="accordion-screenshot.png?raw=true" width="795" height="836" alt="Screenshot"></p>
-
-## How to install extension
-
-1. [Download and install Datenstrom Yellow](https://github.com/datenstrom/yellow/).
-2. [Download extension](../../archive/master.zip). If you are using Safari, right click and select 'Download file as'.
-3. Copy `master.zip` into your `system/extensions` folder.
-
-To uninstall delete the [extension files](extension.ini).
 
 ## How to create an accordion
 
@@ -18,15 +10,7 @@ This extension will automatically present in an accordion style so-called defini
 
 Accordions are commonly used for names and definitions, FAQs and answers, categories and topics.
 
-## Settings
-
-The following setting can be configured in file `system/settings/system.ini`:
-
-`AccordionType` (default: `auto`) = possible values are `auto` (only one panel is open at the same time), `manual` (each panel can be opened and closed independently), `none` (accordion-style presentation is disabled)  
-
-You can also set the `AccordionType` in the [settings](https://github.com/datenstrom/yellow-extensions/tree/master/features/core#settings) at the top of a page: this will override the global setting.
-
-## Examples
+## Example
 
 A simple accordion:
 
@@ -52,6 +36,18 @@ hendrerit mi posuere lectus.
 vitae, risus.
 ```
 
+## Settings
+
+The following setting can be configured in file `system/settings/system.ini`:
+
+`AccordionType` (default: `auto`) = possible values are `auto` (only one panel is open at the same time), `manual` (each panel can be opened and closed independently), `none` (accordion-style presentation is disabled)  
+
+You can also set the `AccordionType` in the [settings](https://github.com/datenstrom/yellow-extensions/tree/master/features/core#settings) at the top of a page: this will override the global setting.
+
+## Installation
+
+[Download extension](https://github.com/GiovanniSalmeri/yellow-accordion/archive/master.zip) and copy zip file into your `system/extensions` folder. Right click if you use Safari.
+
 ## Developer
 
-Giovanni Salmeri. [Get support](https://github.com/GiovanniSalmeri/yellow-accordion/issues).
+Giovanni Salmeri. [Get help](https://github.com/GiovanniSalmeri/yellow-accordion/issues).
