@@ -1,3 +1,5 @@
+// Accordion extension, https://github.com/GiovanniSalmeri/yellow-accordion
+
 "use strict";
 var accordionType = accordionType || "auto";
 if (accordionType != "none") {
