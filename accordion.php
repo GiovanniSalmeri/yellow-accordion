@@ -19,7 +19,7 @@ class YellowAccordion {
             $extensionLocation = $this->yellow->system->get("coreServerBase").$this->yellow->system->get("coreExtensionLocation");
             $output .= "<link rel=\"stylesheet\" type=\"text/css\" media=\"all\" href=\"{$extensionLocation}accordion.css\" />\n";
             $output .= "<script type=\"text/javascript\">var accordionType = ".json_encode($accordionType)."</script>\n";
-            $output .= "<script type=\"text/javascript\" src=\"{$extensionLocation}accordion.js\"></script>\n";
+            $output .= "<script type=\"text/javascript\" defer=\"defer\"  src=\"{$extensionLocation}accordion.js\"></script>\n";
         }
         return $output;
     }
