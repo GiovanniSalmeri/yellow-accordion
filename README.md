@@ -42,7 +42,7 @@ The following setting can be configured in file `system/extensions/yellow-system
 
 `AccordionType` (default: `auto`) = possible values are `auto` (only one panel is open at the same time), `manual` (each panel can be opened and closed independently), `none` (accordion-style presentation is disabled)  
 
-You can also set the `AccordionType` in the [settings](https://github.com/datenstrom/yellow-extensions/tree/master/source/core#settings) at the top of a page: this will override the global setting.
+You can also set the `AccordionType` in the [settings](https://github.com/annaesvensson/yellow-core#settings) at the top of a page: this will override the global setting.
 
 ## Installation
 
