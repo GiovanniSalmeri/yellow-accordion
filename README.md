@@ -50,4 +50,4 @@ You can also set the `AccordionType` in the [settings](https://github.com/annaes
 
 ## Developer
 
-Giovanni Salmeri. [Get help](https://github.com/GiovanniSalmeri/yellow-accordion/issues).
+Giovanni Salmeri. [Get help](https://datenstrom.se/yellow/help/)
