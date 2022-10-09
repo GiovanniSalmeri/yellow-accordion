@@ -1,9 +1,9 @@
 // Accordion extension, https://github.com/GiovanniSalmeri/yellow-accordion
 
 "use strict";
-var accordionType = accordionType || "auto";
-if (accordionType != "none") {
-    document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function() {
+    var accordionType = accordionType || "auto";
+    if (accordionType != "none") {
         function resetAll(dts, init) {
             for (var i = 0; i < dts.length; i++) {
                 if (init) {
@@ -34,5 +34,5 @@ if (accordionType != "none") {
             }
         }
         resetAll(document.getElementsByTagName("dt"), true);
-    });
-}
+    }
+});
