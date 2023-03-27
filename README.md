@@ -4,8 +4,6 @@ Accordion-style lists.
 
 <p align="center"><img src="accordion-screenshot.png?raw=true" alt="Screenshot"></p>
 
-## Installation
-
 ## How to install an extension
 
 [Download ZIP file](https://github.com/GiovanniSalmeri/yellow-accordion/archive/main.zip) and copy it into your `system/extensions` folder. [Learn more about extensions](https://github.com/annaesvensson/yellow-update).
