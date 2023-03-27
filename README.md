@@ -4,15 +4,21 @@ Accordion-style lists.
 
 <p align="center"><img src="accordion-screenshot.png?raw=true" alt="Screenshot"></p>
 
+## Installation
+
+## How to install an extension
+
+[Download ZIP file](https://github.com/GiovanniSalmeri/yellow-accordion/archive/main.zip) and copy it into your `system/extensions` folder. [Learn more about extensions](https://github.com/annaesvensson/yellow-update).
+
 ## How to create an accordion
 
 This extension will automatically present in an accordion style so-called definition lists: the "term" will be treated as the visible part, the "definition" as the expandable part. See the [documentation of PHP Markdown Extra](https://michelf.ca/projects/php-markdown/extra/#def-list) for further details about writing definition lists in Markdown. (Note however that this extension does not support more terms for the same definition nor more definitions for the same term.)
 
 Accordions are commonly used for names and definitions, FAQs and answers, categories and topics.
 
-## Example
+## Examples
 
-A simple accordion:
+Creating a simple accordion:
 
 ```
 Apple
@@ -44,10 +50,6 @@ The following setting can be configured in file `system/extensions/yellow-system
 
 You can also set the `AccordionType` in the [settings](https://github.com/annaesvensson/yellow-core#settings) at the top of a page: this will override the global setting.
 
-## Installation
-
-[Download extension](https://github.com/GiovanniSalmeri/yellow-accordion/archive/main.zip) and copy zip file into your `system/extensions` folder. Right click if you use Safari.
-
 ## Developer
 
-Giovanni Salmeri. [Get help](https://datenstrom.se/yellow/help/)
+Giovanni Salmeri. [Get help](https://datenstrom.se/yellow/help/).
