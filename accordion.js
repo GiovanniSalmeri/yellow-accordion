@@ -28,18 +28,13 @@ document.addEventListener("DOMContentLoaded", function() {
         function toggle() {
             var dd = this.parentElement.nextElementSibling;
             if (dd.tagName=="DD") {
-                if (this.getAttribute("aria-expanded")=="true") {
-                    this.setAttribute("aria-expanded", "false");
-                    dd.setAttribute("aria-hidden", "true"); 
-                    dd.style.maxHeight = 0;
-                } else {
-                    if (accordionType!="manual") {
-                        resetAll(this.parentElement.parentElement.querySelectorAll("dt"), false);
-                    }
-                    this.setAttribute("aria-expanded", "true");
-                    dd.setAttribute("aria-hidden", "false"); 
-                    dd.style.maxHeight = dd.scrollHeight+"px";
+                var close = this.getAttribute("aria-expanded")=="true";
+                if (!close && accordionType!="manual") {
+                    resetAll(this.parentElement.parentElement.querySelectorAll("dt"), false);
                 }
+                this.setAttribute("aria-expanded", !close);
+                dd.setAttribute("aria-hidden", close); 
+                dd.style.maxHeight = close ? 0 : dd.scrollHeight+"px";
             }
         }
         resetAll(document.querySelectorAll("dt"), true);
