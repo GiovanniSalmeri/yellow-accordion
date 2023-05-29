@@ -1,36 +1,64 @@
 /* Accordion extension, https://github.com/GiovanniSalmeri/yellow-accordion */
 
+/* General */
+
 dt {
+    background-color: #e0e0e0;
     margin-bottom: 5px;
     border-radius: 4px;
-    padding: 5px;
+    padding: 3px 5px;
     text-align: left;
 }
-dt[role="button"] {
-    cursor: pointer;
-    transition: 0.4s;
-}
-dt[role="button"][aria-expanded="true"], dt[role="button"]:hover, dt[role="button"]:focus {
-    background-color: #eaeaea;
-}
-dt[role="button"]::after {
-    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 154 154' height='0.8em' width='0.8em'%3E%3Crect x='7' y='7' rx='30' ry='30' width='140' height='140' stroke-width='14' stroke='%23b4b4b4' fill='%23f3f3f3' /%3E%3Cg stroke='%23000' stroke-width='14'%3E%3Cline x1='30' y1='75' x2='120' y2='75' /%3E%3Cline x1='75' y1='30' x2='75' y2='120' /%3E%3C/g%3E%3C/svg%3E");	/*font-size: 13px;*/
-    float: right;
-    margin-left: 1em;
-}
-dt[role="button"][aria-expanded="true"]::after {
-    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 154 154' height='0.8em' width='0.8em'%3E%3Crect x='7' y='7' rx='30' ry='30' width='140' height='140' stroke-width='14' stroke='%23b4b4b4' fill='%23f3f3f3' /%3E%3Cg stroke='%23000' stroke-width='14'%3E%3Cline x1='30' y1='75' x2='120' y2='75' /%3E%3C/g%3E%3C/svg%3E");
-}
+
 dd {
     margin-left: 0;
     padding: 0px 5px 0px 5px;
-    transition: 0.3s ease-in-out;
     margin-bottom: 10px;
+}
+
+/* Accordion */
+
+dt.accordion {
+    padding: 0;
+}
+dt.accordion > button {
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+    text-align: inherit;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    background: none;
+    box-shadow: none;
+}
+dt.accordion > button {
+    border-radius: 4px;
+    padding: 3px 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    width: 100%;
+}
+dt.accordion > button:hover, dt.accordion > button:focus {
+    background-color: #eaeaea;
+}
+dt.accordion > button::after {
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 154 154' height='0.8em' width='0.8em'%3E%3Crect x='7' y='7' rx='30' ry='30' width='140' height='140' stroke-width='14' stroke='%23b4b4b4' fill='%23f3f3f3' /%3E%3Cg stroke='%23000' stroke-width='14'%3E%3Cline x1='30' y1='75' x2='120' y2='75' /%3E%3Cline x1='75' y1='30' x2='75' y2='120' /%3E%3C/g%3E%3C/svg%3E");
+    float: right;
+    margin-left: 1em;
+}
+dt.accordion > button[aria-expanded="true"]::after {
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 154 154' height='0.8em' width='0.8em'%3E%3Crect x='7' y='7' rx='30' ry='30' width='140' height='140' stroke-width='14' stroke='%23b4b4b4' fill='%23f3f3f3' /%3E%3Cg stroke='%23000' stroke-width='14'%3E%3Cline x1='30' y1='75' x2='120' y2='75' /%3E%3C/g%3E%3C/svg%3E");
+}
+dd {
+    transition: 0.3s ease-in-out;
     overflow: hidden;
 }
 dd[aria-hidden="true"] {
+    visibility: hidden;
     opacity: 0;
 }
 dd[aria-hidden="false"] {
+    visibility: visible;
     opacity: 1;
 }

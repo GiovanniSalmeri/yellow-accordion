@@ -2,7 +2,7 @@
 // Accordion extension, https://github.com/GiovanniSalmeri/yellow-accordion
 
 class YellowAccordion {
-    const VERSION = "0.8.16";
+    const VERSION = "0.8.17";
     public $yellow;         //access to API
     
     // Handle initialisation

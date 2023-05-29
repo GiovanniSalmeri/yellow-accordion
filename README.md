@@ -1,4 +1,4 @@
-# Accordion 0.8.16
+# Accordion 0.8.17
 
 Accordion-style lists.
 
