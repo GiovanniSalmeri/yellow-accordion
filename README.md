@@ -1,4 +1,4 @@
-# Accordion 0.8.17
+# Accordion 0.9.1
 
 Accordion-style lists.
 
@@ -46,7 +46,7 @@ The following setting can be configured in file `system/extensions/yellow-system
 
 `AccordionType` = behaviour of accordion, `auto` for one panel open at the same time, `manual` for each panel independent form the others, `none` to disable  
 
-You can also set the `AccordionType` in the [settings](https://github.com/annaesvensson/yellow-core#settings-page) at the top of a page, this will override the global setting.
+Use [Perpage](https://github.com/GiovanniSalmeri/yellow-perpage) if you want to ovverride this setting for a single page.
 
 ## Developer
 
