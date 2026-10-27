@@ -1,8 +1,8 @@
-# Accordion 0.9.1
+# Accordion 1.0.0
 
-Accordion-style lists.
+Accordion-style lists. Developed by Giovanni Salmeri.
 
-<p align="center"><img src="SCREENSHOT.png" alt="Screenshot"></p>
+<p align="center"><img src="screenshot.png" alt="Screenshot"></p>
 
 ## How to install an extension
 
@@ -13,6 +13,8 @@ Accordion-style lists.
 This extension will automatically present in an accordion style so-called definition lists: the "term" will be treated as the visible part, the "definition" as the expandable part. See the [documentation of PHP Markdown Extra](https://michelf.ca/projects/php-markdown/extra/#def-list) for further details about writing definition lists in Markdown. (Note that this extension does not support more terms for the same definition nor more definitions for the same term.)
 
 Accordions are commonly used for names and definitions, FAQs and answers, categories and topics.
+
+Starting with Yellow 1.0, you can achieve a very similar result by using the [syntax for collapsible blocks](https://datenstrom.se/yellow/help/how-to-change-the-content).
 
 ## Examples
 
@@ -46,6 +48,4 @@ The following setting can be configured in file `system/extensions/yellow-system
 
 `AccordionType` = behaviour of accordion, `auto` for one panel open at the same time, `manual` for each panel independent form the others, `none` to disable  
 
-## Developer
-
-Giovanni Salmeri. [Get help](https://datenstrom.se/yellow/help/).
+Do you have questions? [Get help](https://datenstrom.se/yellow/help/).
